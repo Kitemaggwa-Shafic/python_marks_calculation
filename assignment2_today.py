@@ -37,10 +37,12 @@ while True:
     try:
         # tests1, tests2 = testCompare(tests1, tests2) 
         courseWorkMark = print(courseWorkResult())
+        # if statement comparing tests using the testCompare() function
         if testCompare() < 20 and testCompare() >100:
             raise ValueError
         break
     except ValueError:
+        # Print result of the error msg
         print('Please test values are not below 20 and not above 100 : ' )
         
 
